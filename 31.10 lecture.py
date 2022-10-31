@@ -7,9 +7,13 @@ def drawSide(userLength):
     turtle.right(90)
     return 
 
-drawSide(userLength)
-drawSide(userLength)
-drawSide(userLength)
-drawSide(userLength)
+def drawSquare(userLength):
+    for i in range(4):
+        drawSide(userLength)
+    return userLength * userLength
 
-input()
+area = drawSquare(userLength)
+print ("The area of the square is " + str(area) + "!")
+
+# window closes when clicked on, or permanently stays open if input() function is used instead
+turtle.exitonclick()
