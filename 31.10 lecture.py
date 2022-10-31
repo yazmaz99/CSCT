@@ -2,6 +2,11 @@ import turtle
 
 userLength = int(input("Enter length of sides: "))
 
+turtle.pencolor('turquoise')
+turtle.width(10)
+turtle.speed(2)
+turtle.fillcolor('pink')
+
 def drawSide(userLength):
     turtle.forward(userLength)
     turtle.right(90)
@@ -15,5 +20,4 @@ def drawSquare(userLength):
 area = drawSquare(userLength)
 print ("The area of the square is " + str(area) + "!")
 
-# window closes when clicked on, or permanently stays open if input() function is used instead
 turtle.exitonclick()
