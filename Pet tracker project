@@ -1,0 +1,12 @@
+while True:
+    try:
+        age = int(input("Please enter your pet's age, to the nearest year: "))
+    except ValueError:
+        print("Sorry, I didn't understand that.")
+        continue
+    else:
+        break
+if age <= 25: 
+    print("Thank you, we have registered your pet's age as " + str(age) + ".")
+else:
+    print("Sorry, there was an error with the age you entered.")
