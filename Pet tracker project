@@ -1,12 +1,19 @@
+petName = input("Please enter your pet's name: ")
+nameChecker = input("Your pet's name is " + str(petName) + ", correct? ")
+if nameChecker == "Yes" or nameChecker == "yes" or nameChecker == "Y" or nameChecker == "y":
+    print("Thank you, we have registered your pet's name as " + str(petName) + ".")
+else:
+    pass
+
 while True:
     try:
-        age = int(input("Please enter your pet's age, to the nearest year: "))
+        petAge = int(input("Please enter your pet's age, to the nearest year: "))
     except ValueError:
         print("Sorry, I didn't understand that.")
         continue
     else:
         break
-if age <= 25: 
-    print("Thank you, we have registered your pet's age as " + str(age) + ".")
+if petAge <= 25: 
+    print("Thank you, we have registered your pet's age as " + str(petAge) + ".")
 else:
     print("Sorry, there was an error with the age you entered.")
